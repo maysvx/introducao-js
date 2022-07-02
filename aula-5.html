@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>aula 05</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h3>Aula 05</h3>
+        <br/>
+        <script>
+            var quantidade_hr // quantidade hr trabalhadas
+            var valor_hr // valor da hr
+            var inss // desconto inss
+            var ttl_descontos // total descontos
+            var salario_bruto // salario bruto
+            var salario_liquido // salario liquido
+
+            quantidade_hr = parseFloat(window.prompt('informe a quantidade de horas trabalhadas: ', ('00')))
+            valor_hr = parseFloat(window.prompt('informe o valor da hora : ', ('00')))
+            inss = parseFloat(window.prompt('informe o valor do inss (em %): ', ('00')))
+
+            salario_bruto = valor_hr + quantidade_hr
+            ttl_descontos = (inss/100) + salario_bruto
+            salario_liquido = salario_bruto +ttl_descontos 
+
+            document.write('<p>Demontrativo para calculo de salario<p/> <br/>')
+            document.write ('<p> quantidade de hrs trabalhadas = <p/>' + quantidade_hr + '<br/>')
+                if(quantidade_hr > 180){
+                    document.write('valor maximo excedido')
+                }if(quantidade_hr < 135){
+                     document.write('valor mminino invalido')
+                }
+            document.write('<p> valor da hora trabalhada : <p/>' + valor_hr + '<br/>')
+                if(valor_hr > 50){
+                    document.write('valor maximo excedido')
+                }
+                if(valor_hr < 25){
+                    document.write('valor minimo invalido')
+                }
+
+        </script>
+    </body>
+</html>

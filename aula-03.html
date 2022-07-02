@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>aula 03</title>
+    <meta charset="utf-8"/>
+</head>
+
+<body>
+    <h1>Aula 03</h1>
+    <div>
+        <form nome="formulario" method="post"  action="">
+            insira um valor:
+            <input type="number" name= "n1"/>
+            insira outro valor:
+            <input type="number" name= "n2"/>
+            <input type="button" name="btn-somar" value="somar" onclick= somar() />
+            <input type="reset" name="btn-cancelar" value="limpar"/>
+        </form>
+    </div>
+
+    <script language="javascript">
+
+        var num1;
+        var num2;
+        var js_soma;
+
+        function somar(){
+            num1 = parseInt(document.formulario.n1.value);
+            num2 = parseInt(document.formulario.n2.value)
+            
+            js_soma = num1 + num2;
+
+            window.alert("resultado = " + js_soma.toString() )
+        }
+    </script>
+</body>
+
+</html>

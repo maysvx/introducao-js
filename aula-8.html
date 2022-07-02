@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aula 08 </title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>Aula 08 - while</h1>
+    <br/>
+    <p>Objetivo: Executar uma sequência de comandos por uma quantidade indeterminada de vezes utilizando uma 
+        variável de controle 
+        (valor lógico = true, por exemplo) no lugar de contadores delimitadores. O controle pode ser feito um 
+        controle através de perguntas na tela, utilizando o método confirm (Ok ou Cancelar, por exemplo).</p>
+    <script language="javascript">
+        var js_contador = 1 
+        var js_resposta = true
+
+        while(js_resposta == true){
+            document.write('<p>' + js_contador + ' repeticao de uma linha de comando dentro de um laço condiconal. ')
+                js_contador +=1;
+                js_resposta = window.confirm('dseja continuar? ')
+        }
+
+    </script>
+</body>
+
+</html>
